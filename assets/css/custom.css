@@ -1,4 +1,25 @@
 /* site styles */
 .hero-section .container-fluid {
     padding-left: 80px;
+    position: relative;
+}
+.hero-social-links {
+    position: absolute;
+    right: 150px;
+    bottom: 70px;
+}
+.hero-social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: #C6C6C6;
+  line-height: 0;
+  margin-left: 36px;
+  transition: 0.3s;
+}
+.hero-social-links a:hover {
+  color: #C6C6C6;
+}
+.about.conic-bg-right {
+    background: url(../img/conic-background.svg) no-repeat center;
+    background-size: cover;
 }

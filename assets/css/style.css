@@ -388,6 +388,7 @@ section {
   height: 100vh;
   background: url(../img/main-section-bg.png) center center no-repeat;
   background-size: cover;
+  position: relative;
 }
 .hero-section h1 {
   margin: 0;
@@ -415,6 +416,7 @@ section {
   line-height: 34px;
 }
 .btn-site-theme {
+  cursor: pointer;
   border-radius: 20px;
   background: linear-gradient(318.21deg, #CABFAF 14.05%, #603D15 85.29%);
   box-shadow: 4px 4px 10px rgba(31, 36, 39, 0.8), -4px -4px 10px rgba(72, 78, 83, 0.6);
@@ -424,6 +426,15 @@ section {
   font-size: 23px;
   line-height: 28px;
   text-align: center;
+}
+.btn-site-theme:hover,
+.btn-site-theme:focus,
+.btn-site-theme:active,
+.btn-site-theme:visited {
+  background: linear-gradient(318.21deg, #CABFAF 14.05%, #603D15 85.29%);
+  box-shadow: 4px 4px 10px rgba(31, 36, 39, 0.8), -4px -4px 10px rgba(72, 78, 83, 0.6);
+  color: #FDFDFD;
+  outline: none;
 }
 .btn-site-theme > span {
   display: flex;
@@ -507,6 +518,10 @@ section.about {
   padding: 0;
   margin-left: 110px;
 }
+.about.conic-bg-right .content {
+  margin-left: 0;
+  margin-right: 110px;
+}
 .about .content h3 {
   font-size: 33px;
   line-height: 40px;
@@ -546,7 +561,11 @@ section.about {
   font-size: 16px;
   letter-spacing: 1px;
 }
-
+.about .btn-site-theme {
+  width: 263px;
+  display: inline-block;
+}
+.about .btn-site-theme:hover {}
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
