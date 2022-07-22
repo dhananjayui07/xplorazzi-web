@@ -250,11 +250,13 @@
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+    autoplay: false,
     slidesPerView: 'auto',
+    centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -264,6 +266,9 @@
       320: {
         slidesPerView: 1,
         spaceBetween: 40
+      },
+      767: {
+        slidesPerView: 2,
       },
 
       1200: {
