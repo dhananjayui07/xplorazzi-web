@@ -1,4 +1,11 @@
 /* site styles */
+.hero-video-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+}
 .hero-section .container-fluid {
     padding-left: 80px;
     position: relative;
@@ -18,6 +25,10 @@
 }
 .hero-social-links a:hover {
   color: #C6C6C6;
+}
+.about.conic-bg-left {
+    background: url(../img/conic-background-left.svg) no-repeat center;
+    background-size: cover;
 }
 .about.conic-bg-right {
     background: url(../img/conic-background.svg) no-repeat center;

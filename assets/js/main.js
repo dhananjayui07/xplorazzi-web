@@ -161,11 +161,11 @@
   new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false
-    // },
-    autoplay: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    centeredSlides: true,
     slidesPerView: 'auto',
     pagination: false,
     navigation: {
@@ -186,7 +186,7 @@
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 7,
+        slidesPerView: 5,
         spaceBetween: 120
       }
     }
