@@ -161,10 +161,11 @@
   new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    autoplay: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
     centeredSlides: true,
     slidesPerView: 'auto',
     pagination: false,
@@ -175,19 +176,19 @@
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 40
+        spaceBetween: 20
       },
       480: {
         slidesPerView: 3,
-        spaceBetween: 60
+        spaceBetween: 20
       },
       640: {
         slidesPerView: 4,
-        spaceBetween: 80
+        spaceBetween: 20
       },
       992: {
-        slidesPerView: 5,
-        spaceBetween: 120
+        slidesPerView: 6,
+        spaceBetween: 10
       }
     }
   });
@@ -288,6 +289,112 @@
       mirror: false
     });
   }
+
+  // animated progressbar
+  jQuery(document).ready(function(jQuery) {
+    function animateElements() {
+      jQuery('.progressbar').each(function() {
+        var elementPos = jQuery(this).offset().top;
+        var topOfWindow = jQuery(window).scrollTop();
+        var percent = jQuery(this).find('.circle').attr('data-percent');
+        var percentage = parseInt(percent, 10) / parseInt(100, 10);
+        var animate = jQuery(this).data('animate');
+        if (elementPos < topOfWindow + jQuery(window).height() - 30 && !animate) {
+          jQuery(this).data('animate', true);
+
+          // First circle
+          jQuery('.first.circle').circleProgress({
+            startAngle: -Math.PI / 4 / 2,
+            value: percent / 110,
+            thickness: 20,
+            size: 276.0,
+            fill: {
+              gradient: [['#D9D9D9', .5], ['#CE9549', .5]], 
+              gradientAngle: Math.PI / 4 * 7
+
+              // color: '#CE9549'
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            jQuery(this).find('.data').text(stepValue.toFixed(1).substr(1));
+          }).stop();
+
+          // second circle
+          jQuery(this).find('.second.circle').circleProgress({
+            startAngle: Math.PI / 2,
+            value: percent / 100,
+            thickness: 20,
+            size: 276.0,
+            fill: {
+              gradient: [['#CE9549', .5], ['#D9D9D9', .5]], 
+              gradientAngle: Math.PI / 4 * 7
+
+              // color: '#CE9549'
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            jQuery(this).find('.data').text((stepValue * 100).toFixed(1) + "%");
+          }).stop();
+
+          // third circle
+          jQuery(this).find('.third.circle').circleProgress({
+            startAngle: -Math.PI / 2,
+            value: percent / 100,
+            thickness: 20,
+            size: 276.0,
+            fill: {
+              gradient: [['#CE9549', .5], ['#D9D9D9', .5]], 
+              gradientAngle: Math.PI / 4 * 1
+
+              // color: '#CE9549'
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            jQuery(this).find('.data').text((stepValue * 100).toFixed(1) + "%");
+          }).stop();
+        }
+      });
+
+
+
+      jQuery('.progressbar').each(function() {
+        var elementPos = jQuery(this).offset().top;
+        var topOfWindow = jQuery(window).scrollTop();
+        var percent = jQuery(this).find('.circle').attr('data-percent');
+        var percentage = parseInt(percent, 10) / parseInt(100, 10);
+        var animate = jQuery(this).data('animate');
+        if (elementPos < topOfWindow + jQuery(window).height() - 30 && !animate) {
+          jQuery(this).data('animate', true);
+
+          jQuery('.first.circle').circleProgress({
+            value: percent / 100,
+            fill: {
+              gradient: [['#0681c4', .5], ['#4ac5f8', .5]], 
+              gradientAngle: Math.PI / 4
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            jQuery(this).find('.data').text(stepValue.toFixed(1).substr(1));
+          });
+
+
+          jQuery(this).find('.circle').circleProgress({
+            startAngle: -Math.PI / 4,
+            value: percent / 100,
+            thickness: 14,
+            size: 276.0,
+            fill: {
+              color: '#CE9549'
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            jQuery(this).find('.data').text((stepValue * 100).toFixed(1) + "%");
+          }).stop();
+        }
+      });
+    }
+
+    // Show animated elements
+    animateElements();
+    jQuery(window).scroll(animateElements);
+  });
+  // animated progressbar
+
   window.addEventListener('load', () => {
     aos_init();
   });
