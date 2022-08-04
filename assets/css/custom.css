@@ -59,7 +59,6 @@
     width: 82%;
 }
 .btn-outline {
-    border-radius: 18px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -68,9 +67,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #E2A24D;
-    background: transparent;
     cursor: pointer;
+    transition: all 0.3s;
+
+    background: linear-gradient(to right, #AB6C18, #E2A24D);
+    border-radius: 18px;
+    position: relative;
+    z-index: 0;
+
+}
+.btn-outline::after {
+    content: '';
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: -1;
+    background: #060606;
+    border-radius: 16px;
 }
 .about-info .btn-outline {
     width: 190px;
@@ -81,11 +96,16 @@
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline:visited {
-    border: 2px solid #E2A24D;
+    /* border: 2px solid #E2A24D; */
     outline: none;
     text-decoration: none;
     color: #FDFDFD;
-    background: transparent;
+    background: #212121;
+    background: linear-gradient(to right, #E2A24D, #AB6C18);
+}
+.btn-outline:hover::after {
+    background: #212121;
+    border-radius: 18px;
 }
 /* responsive styles */
 @media (max-width: 1400px) {
