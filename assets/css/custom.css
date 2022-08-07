@@ -86,6 +86,7 @@
     z-index: -1;
     background: #060606;
     border-radius: 16px;
+    transition: all 0.3s;
 }
 .about-info .btn-outline {
     width: 190px;
@@ -417,3 +418,14 @@
     line-height: 12px;
     color: #C7C7C7;
 }
+
+/* about section snapper */
+/* section.about {
+    height: 100vh;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+}
+section.about .about-wrapper {
+    scroll-snap-align: center;
+} */
