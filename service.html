@@ -73,170 +73,108 @@
   </header><!-- End Header -->
   <main>
     <!-- hero section -->
-    <section id="hero" class="idea-hero-section d-flex align-items-center">
-      <div class="container">
+    <section id="hero" class="service-hero-section d-flex align-items-center">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-              <h2>IDEA</h2>
+          <div class="col-lg-6">
+            <img src="./assets/img/shelf-merchandise.png" class="img-fluid" alt="shelf merchandise" />
+          </div>
+          <div class="col-lg-6">
+            <div class="service-hero-content">
+              <h2>Shelf Merchandising Checks</h2>
               <p>
-                Data Gathering is the foremost step in image recognition which deals in collecting information about the facts to be analysed. 
-                And hence, Image recognition is widely used in retail for various usecases.<br/> Xplorazzi combine computer vision and deep learning technology to 
-                recognise Retail SKUs from an image on a SKU level which helps retailers and CPG Brands take actions on ground to drive sales. 
-                Xplorazzi recognition engine can detect retail items at 90+% accuracy which helps to automate business lines
+                We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales by 
+                making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts. 
+                We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive 
+                sales by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts.
               </p>
-              <a href="#" class="btn-site-theme">Use-cases of SKU Recognition</a>
+              <a href="#" class="btn-outline">Get a Demo</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- use case section -->
-    <section class="idea-use-case">
+    <section class="why-shelf-merchandising">
       <div class="container">
         <div class="section-header">
-          <h2>Our Products</h2>
-          <p>Use cases of SKU Recognition</p>
+          <h2>Why Shelf Merchandising Checks?</h2>
         </div>
-        <div class="use-case-wrapper">
-          <div class="use-case-box">
-            <span class="use-case-image"><img src="./assets/img/use-case.png" alt="use case 1" /></span>
-            <div class="use-case-content">
-              <h3>Automated <br/> Checkout</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+        <div class="shelf-merchandising-wrapper">
+          <div class="box">
+            <span class="merchandising-image"><img src="./assets/img/technology-behind.png" alt="Point 1" /></span>
+            <div class="merchandising-content">
+              <h3>Point 1</h3>
             </div>
           </div>
-          <div class="use-case-box">
-            <span class="use-case-image"><img src="./assets/img/use-case.png" alt="use case 1" /></span>
-            <div class="use-case-content">
-              <h3>Merchandising <br/> Checks</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+          <div class="box">
+            <span class="merchandising-image"><img src="./assets/img/technology-behind.png" alt="Point 2" /></span>
+            <div class="merchandising-content">
+              <h3>Point 2</h3>
             </div>
           </div>
-          <div class="use-case-box">
-            <span class="use-case-image"><img src="./assets/img/use-case.png" alt="use case 1" /></span>
-            <div class="use-case-content">
-              <h3>SKU <br/> Discovery</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+          <div class="box">
+            <span class="merchandising-image"><img src="./assets/img/technology-behind.png" alt="Point 3" /></span>
+            <div class="merchandising-content">
+              <h3>Point 3</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- technology behind this -->
-    <section class="technology-behind">
+    <!-- how it works -->
+    <section class="how-it-works">
       <div class="container">
         <div class="section-header">
-          <p>Technology Behind This</p>
+          <p>How does it work?</p>
         </div>
-        <!-- <h2 class="title-text">Technology Behind This</h2> -->
-        <div class="row technology-info-row">
-          <div class="col-lg-5">
-            <img src="./assets/img/technology-behind.png" alt="Technology Behind This" />
-          </div>
-          <div class="col-lg-7">
-            <h4>The process of sku recognition goes through 5 phases</h4>
-            <ol>
-              <li>Image capture: Collecting images from shelf cameras, Kiosk Cameras, or mobile phones. </li>
-              <li>Image preprocessing: Images usually need to be pre-processed to reduce noise and redundant information to provide high-quality images for further process. It mainly includes image segmentation, transformation, and enhancement.</li>
-              <li>Feature extraction: the analysis and processing of image data to determine the invariant characteristics in the image. </li>
-              <li>Feature classification: after a certain image feature is mapped to the feature vector or space, a specific decision rule is applied to classify the low-dimensional feature to make the recognition result accurate. </li>
-              <li>Recognition output: the pre-trained network is employed to predict the category/brand/sub-brand of the retail product.</li>
-            </ol>
-          </div>
-        </div>
-
-        <div class="row technology-info-row">
-          <div class="col-lg-7">
-            <p>
-              The core of product recognition is Convolutional Neural Networks(CNNs) for deep learning is to learn deep representation, i.e., to learn multilevel representation and 
-              abstraction from images. The Deep learning training needs annotated images with bounding boxes to be fed.The accuracy of SKU detection is highly dependent 
-              on the number of data sets with all possible variations in data which is possible for certain situations on the retail ground including occlusion, daylight, 
-              evening light, surrounding items, etc.
-            </p>
-          </div>
-          <div class="col-lg-4 offset-lg-1">
-            <img src="./assets/img/technology-behind.png" alt="Technology Behind This" />
-          </div>
-        </div>
-        <div class="row technology-info-row">
-          <div class="col-lg-10 offset-lg-1">
-            <p class="text-center">
-              Deep learning for SKU recognition requires a large amount of annotated data for training which creates a heavy workload for a data engineer. 
-              To solve that, Xplorazzi’s propriety engine generates synthetic data that is mixed with a few real-world images to be utilized to train deep 
-              learning networks so that engine can identify and locate the Retail SKUs with good accuracy. Xplorazzi synthetic data generation is 
-              specialized for retail and generates 1000s of annotated images in minutes of time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- onboard SKU -->
-    <section class="onboard-sku">
-      <div class="container">
-        <div class="section-header">
-          <h2>HOW DO WE ONBOARD SKUs</h2>
-          <p>Process flow on how to onboard SKUs faster</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- deployment of recognition model -->
-    <section class="recognition-model">
-      <div class="container">
-        <div class="section-header">
-          <h2>DEPLOYMENT OF AI RECOGNITION MODEL</h2>
-          <p>Prcoess flow on how to recognize SKUs faster</p>
-        </div>
-        <div class="recognition-box-wrapper">
-          <div class="recognition-box">
-            <span class="recognition-image"><img src="./assets/img/technology-behind.png" alt="recognition model" /></span>
-            <p>On Cloud</p>
-          </div>
-          <div class="recognition-box">
-            <span class="recognition-image"><img src="./assets/img/technology-behind.png" alt="recognition model" /></span>
-            <p>On Prem</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- idea integration -->
-    <section class="idea-integration">
-      <div class="container">
-        <div class="section-header">
-          <h2>INTEGRATION</h2>
-          <p>Process flow on how to intergrate our SKU recognition Engine</p>
-        </div>
-        <div class="row integration-info-row">
-          <div class="col-lg-5">
-            <img src="./assets/img/technology-behind.png" alt="idea integration" class="rounded" />
-          </div>
-          <div class="col-lg-7">
-            <h4>REST API Integration</h4>
+        <!-- work 1 -->
+        <div class="work-box content-right">
+          <span class="work-image"><img src="./assets/img/work-1.png" alt="work 1" class="img-fluid" /></span>
+          <div class="work-content">
+            <h4>Take Picture</h4>
             <p>
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales 
               by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts. 
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to 
               drive sales by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts.
             </p>
-            <a href="#" class="btn-outline">Get API Documentation</a>
           </div>
         </div>
-
-        <div class="row integration-info-row">
-          <div class="col-lg-7">
-            <h4>REST API Integration</h4>
+        <!-- work 2 -->
+        <div class="work-box content-left">
+          <div class="work-content">
+            <h4>Take Picture</h4>
             <p>
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales 
               by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts. 
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to 
               drive sales by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts.
             </p>
-            <a href="#" class="btn-outline">Get API Documentation</a>
           </div>
-          <div class="col-lg-4 offset-lg-1">
-            <img src="./assets/img/technology-behind.png" alt="idea integration" class="rounded" />
+          <span class="work-image"><img src="./assets/img/work-2.png" alt="work 1" /></span>
+        </div>
+        <!-- work 3 -->
+        <div class="work-box content-right">
+          <span class="work-image"><img src="./assets/img/work-3.png" alt="work 1" /></span>
+          <div class="work-content">
+            <h4>Take Picture</h4>
+            <p>
+              We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales 
+              by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts. 
+              We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to 
+              drive sales by making frictional less process. Our proprietry solution detects SKUs, Shelf, Empty spaces on shelf, Foreign SKUs on shelf, SKUs details for self checkouts.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="need-advice">
+      <div class="container">
+        <h3>Need advice on how to improve shelf performance?</h3>
+        <p>Talk to our expert to understand what kind of performance improvements are possible for your shelf performance</p>
+        <a href="#" class="btn-outline">Talk to Expert</a>
       </div>
     </section>
 
