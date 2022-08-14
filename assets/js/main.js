@@ -383,7 +383,7 @@
               color: '#CE9549'
             }
           }).on('circle-animation-progress', function(event, progress, stepValue) {
-            jQuery(this).find('.data').text((stepValue * 100).toFixed(1) + "%");
+            jQuery(this).find('.data').text((stepValue * 100).toFixed(1));
           }).stop();
         }
       });

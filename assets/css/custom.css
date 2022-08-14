@@ -33,10 +33,12 @@
 /* about info text styles */
 .about-info {
     padding: 60px 0 76px;
-    background: #060606;
+    background: #060606 url(../img/powerful-tool-bg.svg) no-repeat center center;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 .about-info h2 {
     text-align: center;
@@ -53,7 +55,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.04em;
     color: #C6C6C6;
     margin: 0 auto 64px;
     width: 82%;
@@ -411,7 +413,7 @@
     color: #C7C7C7;
     margin: 0;
 }
-.circle .circleText span {
+.circle .circleText p span {
     display: block;
     font-weight: 400;
     font-size: 10px;
@@ -559,10 +561,40 @@ section.idea-use-case {
     padding: 94px 0 155px;
 }
 .onboard-sku .section-header {
-    padding-bottom: 185px;
+    padding-bottom: 110px;
 }
 .onboard-sku .section-header h2 {
     text-transform: none;
+}
+.onboard-sku .process-flow-box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.onboard-sku .process-flow-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.onboard-sku .process-flow-box span.process-image {
+    width: 217px;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.onboard-sku .process-flow-box span.process-image img {
+    width: 100%;
+}
+.onboard-sku .process-flow-box p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #C6C6C6;
 }
 /* recognition model */
 .recognition-model {
@@ -585,8 +617,6 @@ section.idea-use-case {
 .recognition-model .recognition-box-wrapper .recognition-box .recognition-image {
     width: 100%;
     height: 362px;
-    border-radius: 15px;
-    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -696,60 +726,49 @@ section.idea-use-case {
 /* shelf merchandising */
 .why-shelf-merchandising {
     background: #000000;
-    padding: 130px 0 220px;
+    padding: 130px 0 285px;
 }
 .why-shelf-merchandising .section-header {
-    padding-bottom: 93px;
+    padding-bottom: 136px;
 }
 .why-shelf-merchandising .section-header h2 {
     text-transform: none;
     font-weight: 600;
+    color: #A6A6A6;
 }
 .shelf-merchandising-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
 }
 .shelf-merchandising-wrapper .box {
     position: relative;
-    border-radius: 14px;
-    flex: 1;
-    max-width: 311px;
-    height: 311px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-}
-.shelf-merchandising-wrapper .box .merchandising-image {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.shelf-merchandising-wrapper .box .merchandising-image img {
-    width: 100%;
-}
-.shelf-merchandising-wrapper .box .merchandising-content {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(360deg, #1A1A1A 0%, rgba(7, 7, 7, 0.57) 100%);
-    border-radius: 0;
-    cursor: pointer;
+    flex-direction: column;
 }
-.shelf-merchandising-wrapper .box .merchandising-content h3 {
+.shelf-merchandising-wrapper .box .percentage-text-grad {
+    background: linear-gradient(to bottom, #F1A136 0%, #AF6606 100%);
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
     font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 120px;
+    line-height: 146px;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding-right: 5px;
+}
+.shelf-merchandising-wrapper .box .merchandising-content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     letter-spacing: -0.015em;
-    margin: 170px 0 0;
+    margin: 0;
     color: #A6A6A6;
 }
 /* how does it work */
@@ -809,9 +828,8 @@ section.idea-use-case {
 }
 .work-box .work-content p {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.05em;
+    font-size: 16px;
+    line-height: 20px;
     color: #C6C6C6;
     margin: 0;
 }
@@ -831,8 +849,8 @@ section.idea-use-case {
 }
 .need-advice p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     letter-spacing: -0.05em;
     color: #C6C6C6;

@@ -134,7 +134,7 @@ section {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6776f4;
+  background: #F1A136;
   color: #fff;
 }
 .back-to-top.active {
@@ -576,7 +576,6 @@ section.about {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-  letter-spacing: -0.015em;
   color: #F1A136;
   text-transform: uppercase;
   margin: 0;
@@ -585,17 +584,16 @@ section.about {
   font-size: 30px;
   line-height: 37px;
   font-weight: 700;
-  letter-spacing: -0.015em;
   color: #A6A6A6;
   margin: 0 0 16px;
 }
 .about .content p {
-  font-size: 12px;
-  line-height: 15px;
-  margin: 0 0 48px;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 24px;
   color: #C6C6C6;
-  letter-spacing: -0.05em;
-  width: 45%;
+  letter-spacing: 0.04em;
+  width: 50%;
 }
 .about .content .btn-read-more {
   line-height: 0;
@@ -907,7 +905,7 @@ section.testimonials {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #0B0B0B url(../img/partners-bg-cubes.svg) no-repeat left top;
+  background: #0B0B0B;
   box-shadow: 0px 18px 41px rgba(0, 0, 0, 0.09);
   padding: 70px 0 0;
 }
