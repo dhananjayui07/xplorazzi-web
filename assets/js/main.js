@@ -180,7 +180,7 @@
       },
       480: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 10
       },
       640: {
         slidesPerView: 4,
