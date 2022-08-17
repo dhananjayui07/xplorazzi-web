@@ -36,7 +36,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
+  <header id="header" class="header fixed-top header-inner-page">
     <div class="container d-flex align-items-center justify-content-between px-0">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -100,21 +100,21 @@
             <span class="use-case-image"><img src="./assets/img/use-case-1.png" alt="use case 1" /></span>
             <div class="use-case-content">
               <h3>Automated <br/> Checkout</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+              <a href="automated-checkout.html">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="use-case-box" data-aos="fade-up" data-delay="200">
             <span class="use-case-image"><img src="./assets/img/use-case-2.png" alt="use case 1" /></span>
             <div class="use-case-content">
               <h3>Merchandising <br/> Checks</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+              <a href="automated-checkout.html">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="use-case-box" data-aos="fade-up" data-delay="200">
             <span class="use-case-image"><img src="./assets/img/use-case-3.png" alt="use case 1" /></span>
             <div class="use-case-content">
               <h3>SKU <br/> Discovery</h3>
-              <span>Read More <i class="bi bi-arrow-right"></i></span>
+              <a href="automated-checkout.html">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -124,46 +124,57 @@
     <section class="technology-behind">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
+          <h2 class="d-lg-none">THE INGENUITY</h2>
           <p>Technology Behind This</p>
         </div>
         <!-- <h2 class="title-text">Technology Behind This</h2> -->
         <div class="row technology-info-row" data-aos="fade-up" data-delay="200">
           <div class="col-lg-5">
-            <img src="./assets/img/technology-behind-1.png" alt="Technology Behind This" />
+            <img src="./assets/img/technology-behind-1.svg" class="m-center" alt="Technology Behind This" />
           </div>
           <div class="col-lg-7">
-            <h4>The process of sku recognition goes through 5 phases</h4>
-            <ol>
-              <li>Image capture: Collecting images from shelf cameras, Kiosk Cameras, or mobile phones. </li>
-              <li>Image preprocessing: Images usually need to be pre-processed to reduce noise and redundant information to provide high-quality images for further process. It mainly includes image segmentation, transformation, and enhancement.</li>
-              <li>Feature extraction: the analysis and processing of image data to determine the invariant characteristics in the image. </li>
-              <li>Feature classification: after a certain image feature is mapped to the feature vector or space, a specific decision rule is applied to classify the low-dimensional feature to make the recognition result accurate. </li>
-              <li>Recognition output: the pre-trained network is employed to predict the category/brand/sub-brand of the retail product.</li>
-            </ol>
+            <div class="technology-info-content">
+              <h4>The process of sku recognition goes through 5 phases</h4>
+              <ol>
+                <li>Image capture: Collecting images from shelf cameras, Kiosk Cameras, or mobile phones. </li>
+                <li>Image preprocessing: Images usually need to be pre-processed to reduce noise and redundant information to provide high-quality images for further process. It mainly includes image segmentation, transformation, and enhancement.</li>
+                <li>Feature extraction: the analysis and processing of image data to determine the invariant characteristics in the image. </li>
+                <li>Feature classification: after a certain image feature is mapped to the feature vector or space, a specific decision rule is applied to classify the low-dimensional feature to make the recognition result accurate. </li>
+                <li>Recognition output: the pre-trained network is employed to predict the category/brand/sub-brand of the retail product.</li>
+              </ol>
+            </div>
           </div>
         </div>
 
-        <div class="row technology-info-row" data-aos="fade-up" data-delay="200">
+        <div class="row technology-info-row reverse-order" data-aos="fade-up" data-delay="200">
           <div class="col-lg-7">
-            <p>
-              The core of product recognition is Convolutional Neural Networks(CNNs) for deep learning is to learn deep representation, i.e., to learn multilevel representation and 
-              abstraction from images. The Deep learning training needs annotated images with bounding boxes to be fed.The accuracy of SKU detection is highly dependent 
-              on the number of data sets with all possible variations in data which is possible for certain situations on the retail ground including occlusion, daylight, 
-              evening light, surrounding items, etc.
-            </p>
+            <div class="technology-info-content">
+              <p>
+                The core of product recognition is Convolutional Neural Networks(CNNs) for deep learning is to learn deep representation, i.e., to learn multilevel representation and 
+                abstraction from images. The Deep learning training needs annotated images with bounding boxes to be fed.The accuracy of SKU detection is highly dependent 
+                on the number of data sets with all possible variations in data which is possible for certain situations on the retail ground including occlusion, daylight, 
+                evening light, surrounding items, etc.
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 offset-lg-1">
-            <img src="./assets/img/technology-behind-2.png" alt="Technology Behind This" />
+            <img src="./assets/img/technology-behind-2.svg" class="m-center" alt="Technology Behind This" />
           </div>
         </div>
         <div class="row technology-info-row" data-aos="fade-up" data-delay="200">
+          <div class="col-lg-5 d-lg-none">
+            <img src="./assets/img/technology-behind-3.png" class="m-center" alt="Technology Behind This" />
+          </div>
+          
           <div class="col-lg-10 offset-lg-1">
-            <p class="text-center">
-              Deep learning for SKU recognition requires a large amount of annotated data for training which creates a heavy workload for a data engineer. 
-              To solve that, Xplorazzi’s propriety engine generates synthetic data that is mixed with a few real-world images to be utilized to train deep 
-              learning networks so that engine can identify and locate the Retail SKUs with good accuracy. Xplorazzi synthetic data generation is 
-              specialized for retail and generates 1000s of annotated images in minutes of time.
-            </p>
+            <div class="technology-info-content">
+              <p class="text-center">
+                Deep learning for SKU recognition requires a large amount of annotated data for training which creates a heavy workload for a data engineer. 
+                To solve that, Xplorazzi’s propriety engine generates synthetic data that is mixed with a few real-world images to be utilized to train deep 
+                learning networks so that engine can identify and locate the Retail SKUs with good accuracy. Xplorazzi synthetic data generation is 
+                specialized for retail and generates 1000s of annotated images in minutes of time.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -197,8 +208,8 @@
     <section class="recognition-model">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>DEPLOYMENT OF AI RECOGNITION MODEL</h2>
-          <p>Prcoess flow on how to recognize SKUs faster</p>
+          <h2>DOCKER BASED DEPLOYMENT</h2>
+          <p>Deployment of AI Recognition Model</p>
         </div>
         <div class="recognition-box-wrapper">
           <div class="recognition-box" data-aos="fade-up" data-delay="200">
@@ -221,9 +232,9 @@
         </div>
         <div class="row integration-info-row" data-aos="fade-up" data-delay="200">
           <div class="col-lg-5">
-            <img src="./assets/img/rest-api.png" alt="idea integration" class="rounded" />
+            <img src="./assets/img/rest-api.png" alt="idea integration" class="rounded idea-integration-image" />
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7 idea-integration-content">
             <h4>REST API Integration</h4>
             <p>
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales 
@@ -235,8 +246,8 @@
           </div>
         </div>
 
-        <div class="row integration-info-row" data-aos="fade-up" data-delay="200">
-          <div class="col-lg-7">
+        <div class="row integration-info-row right" data-aos="fade-up" data-delay="200">
+          <div class="col-lg-7 idea-integration-content">
             <h4>REST API Integration</h4>
             <p>
               We combine computer vision and deep learning technology to detect in-store retail items to carry out various use-cases to help CPG Brands and Retails to drive sales 
@@ -247,7 +258,8 @@
             <a href="#" class="btn-outline">Get API Documentation</a>
           </div>
           <div class="col-lg-4 offset-lg-1">
-            <img src="./assets/img/sap.png" alt="idea integration" class="rounded" />
+            <img src="./assets/img/sap.png" alt="idea integration" class="rounded idea-integration-image desktop" />
+            <img src="./assets/img/sap-m.png" alt="idea integration" class="rounded idea-integration-image msite" />
           </div>
         </div>
       </div>
