@@ -414,7 +414,7 @@ section {
 .hero-section h1 {
   font-size: 30px;
   line-height: 40px;
-  font-weight: 800;
+  font-weight: 700;
   color: #A6A6A6;
   margin: 0 0 2px;
   letter-spacing: -0.015em;
@@ -1732,7 +1732,7 @@ section.contact {
   font-weight: 300;
 }
 .footer .footer-top .footer-links ul a:hover {
-  color: #282d36;
+  color: #ffffff;
 }
 .footer .footer-top .footer-contact p {
   color: #C6C6C6;

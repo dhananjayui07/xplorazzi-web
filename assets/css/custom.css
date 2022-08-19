@@ -1086,9 +1086,8 @@ section.idea-use-case {
 }
 .service-hero-content p {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.05em;
+    font-size: 16px;
+    line-height: 20px;
     color: #C6C6C6;
     margin: 0;
 }
@@ -1162,13 +1161,14 @@ section.idea-use-case {
 /* shelf merchandising */
 .why-shelf-merchandising {
     background: #000000;
-    padding: 130px 0 285px;
+    padding: 130px 0 145px;
 }
 .why-shelf-merchandising .section-header {
     padding-bottom: 136px;
 }
 .why-shelf-merchandising .section-header h2 {
     text-transform: none;
+    font-size: 34px;
     font-weight: 600;
     color: #A6A6A6;
 }
@@ -1192,8 +1192,8 @@ section.idea-use-case {
     background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-weight: 600;
-    font-size: 120px;
-    line-height: 146px;
+    font-size: 88px;
+    line-height: 107px;
     letter-spacing: -0.05em;
     margin: 0;
     padding-right: 5px;
@@ -1259,6 +1259,9 @@ section.idea-use-case {
 .work-box {
     display: flex;
     position: relative;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 104px;
 }
 .work-box + .work-box {
     margin-top: 192px;
@@ -1267,7 +1270,7 @@ section.idea-use-case {
     position: absolute;
     content: '';
     width: 48%;
-    height: 3px;
+    height: 1px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(90deg, #F1A136 0%, #AF6606 100%);
@@ -1275,25 +1278,21 @@ section.idea-use-case {
     top: -96px;
 }
 .work-box .work-image {
-    height: 499px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .work-box .work-image img {
     width: auto;
-    height: 488px;
+    height: 220px;
 }
 .work-box .work-content {
-    max-width: 623px;
-    margin-left: 145px;
+    max-width: 590px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-.work-box.content-left .work-content {
-    margin-left: 100px;
 }
 .work-box .work-content h4 {
     font-weight: 600;
@@ -1315,6 +1314,8 @@ section.idea-use-case {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
+        gap: 80px;
     }
     .work-box + .work-box {
         margin-top: 150px;
@@ -1323,14 +1324,14 @@ section.idea-use-case {
         top: -46px;
     }
     .work-box .work-image {
-        height: 324px;
+        height: 220px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .work-box .work-image img {
         width: auto;
-        height: 314px;
+        height: 220px;
     }
     .work-box .work-content {
         width: 80%;

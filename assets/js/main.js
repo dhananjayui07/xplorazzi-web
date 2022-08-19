@@ -222,13 +222,7 @@
 
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfokio-lightbox'
-  });
-
+  
   /**
    * Portfolio details slider
    */
