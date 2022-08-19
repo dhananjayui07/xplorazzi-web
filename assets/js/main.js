@@ -297,19 +297,19 @@
           jQuery(this).data('animate', true);
 
           // First circle
-          jQuery('.first.circle').circleProgress({
+          jQuery('#first_circle').circleProgress({
             startAngle: -Math.PI / 4 / 2,
-            value: percent / 110,
+            value: percent / 100,
             thickness: 20,
             size: 276.0,
             fill: {
-              gradient: [['#D9D9D9', .5], ['#CE9549', .5]], 
+              gradient: [['#CE9549', .5], ['#D9D9D9', .5]], 
               gradientAngle: Math.PI / 4 * 7
 
               // color: '#CE9549'
             }
           }).on('circle-animation-progress', function(event, progress, stepValue) {
-            jQuery(this).find('.data').text(stepValue.toFixed(1).substr(1));
+            jQuery(this).find('.data').text((stepValue * 8.1).toFixed(1) + "M+");
           }).stop();
 
           // second circle
@@ -342,42 +342,6 @@
             }
           }).on('circle-animation-progress', function(event, progress, stepValue) {
             jQuery(this).find('.data').text((stepValue * 100).toFixed(1) + "%");
-          }).stop();
-        }
-      });
-
-
-
-      jQuery('.progressbar').each(function() {
-        var elementPos = jQuery(this).offset().top;
-        var topOfWindow = jQuery(window).scrollTop();
-        var percent = jQuery(this).find('.circle').attr('data-percent');
-        var percentage = parseInt(percent, 10) / parseInt(100, 10);
-        var animate = jQuery(this).data('animate');
-        if (elementPos < topOfWindow + jQuery(window).height() - 30 && !animate) {
-          jQuery(this).data('animate', true);
-
-          jQuery('.first.circle').circleProgress({
-            value: percent / 100,
-            fill: {
-              gradient: [['#0681c4', .5], ['#4ac5f8', .5]], 
-              gradientAngle: Math.PI / 4
-            }
-          }).on('circle-animation-progress', function(event, progress, stepValue) {
-            jQuery(this).find('.data').text(stepValue.toFixed(1).substr(1));
-          });
-
-
-          jQuery(this).find('.circle').circleProgress({
-            startAngle: -Math.PI / 4,
-            value: percent / 100,
-            thickness: 14,
-            size: 276.0,
-            fill: {
-              color: '#CE9549'
-            }
-          }).on('circle-animation-progress', function(event, progress, stepValue) {
-            jQuery(this).find('.data').text((stepValue * 100).toFixed(1));
           }).stop();
         }
       });
