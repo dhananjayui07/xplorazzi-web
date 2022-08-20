@@ -30,25 +30,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
 
-  <!-- <style>
-    .circle {
-        width: 200px;
-        margin: 6px 20px 20px;
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        vertical-align: top;
-    }
-    .circle  strong {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        line-height: 45px;
-        font-size: 43px;
-    }
-  </style> -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
 
@@ -120,28 +102,49 @@
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-12 progeessbarWrap">
-          <div class="progressbar progressbarOne" data-animate="false" data-aos="fade-up" data-aos-delay="200">
-            <div class="first circle" id="first_circle" data-percent="80">
-              <div class="circleText">
-                <strong><span class="data"></span></strong> 
-                <p>Processed <span>(Rapidly Growing)</span></p>
-              </div>
+          <div class="circle">
+            <lottie-player 
+              id="firstCircle"
+              src="https://lottie.host/95e4ed21-779c-4c1e-8a46-d1b3f24df257/mAMpQI6l5u.json" 
+              background="transparent" 
+              speed="1" 
+              style="width: 300px; height: 300px;" 
+              loop:false
+              autoplay>
+            </lottie-player>
+            <div class="circleText">
+              <strong class="data">8M+</strong> 
+              <p>Processed <span>(Rapidly Growing)</span></p>
             </div>
           </div>
-          <div class="progressbar" data-animate="false" data-aos="fade-up" data-aos-delay="200">
-            <div class="second circle" data-percent="60">
-              <div class="circleText">
-                <strong><span class="data"></span> faster</strong> 
-                <p>in SKU onboarding<span>(Compared to Industry<br/>Standard)</span></p>
-              </div>
+          <div class="circle">
+            <lottie-player 
+              id="secondCircle"
+              src="https://lottie.host/b20666e4-e528-43e7-9592-ff0adcfee7a7/dcnWvMtJd6.json" 
+              background="transparent" 
+              speed="1" 
+              style="width: 300px; height: 300px;" 
+              loop:false
+              autoplay>
+            </lottie-player>
+            <div class="circleText">
+              <strong class="data">60% faster</strong> 
+              <p>in SKU onboarding<span>(Compared to Industry<br/>Standard)</span></p>
             </div>
           </div>
-          <div class="progressbar" data-animate="false" data-aos="fade-up" data-aos-delay="200">
-            <div class="third circle" data-percent="99">
-              <div class="circleText">
-                <strong><span class="data"></span></strong> 
-                <p>Detection Accuracy<span>(Best in Market)</span></p>
-              </div>
+          <div class="circle">
+            <lottie-player 
+              id="thirdCircle"
+              src="https://lottie.host/0c9ef098-2ae2-44eb-9b75-7682986ff722/kPDT0dy7lY.json" 
+              background="transparent" 
+              speed="1" 
+              style="width: 300px; height: 300px;" 
+              loop:false 
+              autoplay>
+            </lottie-player>
+            <div class="circleText">
+              <strong class="data">99%</strong> 
+              <p>Detection Accuracy<span>(Best in Market)</span></p>
             </div>
           </div>
         </div>
@@ -522,10 +525,6 @@
         let div = document.getElementById(divId);
         div.classList.remove('content-active');
     }
-
-    window.addEventListener('load', () => {
-      aos_init();
-    });
   </script>
 </body>
 

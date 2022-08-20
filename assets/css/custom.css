@@ -623,24 +623,21 @@
 .circle {
     width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-}
-.circle canvas {
-    vertical-align: middle;
-}
-.circle .circleText {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.circle lottie-player {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.circle .circleText {
+    text-align: center;
 }
 .circle .circleText strong {
     display: block;
@@ -648,6 +645,7 @@
     font-size: 30px;
     line-height: 37px;
     color: #F1A136;
+    text-align: center;
 }
 .circle .circleText p {
     font-weight: 600;
