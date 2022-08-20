@@ -614,6 +614,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 .progressbar {
     display: inline-block;
@@ -635,6 +636,7 @@
     z-index: -1;
     left: 0;
     top: 0;
+    max-width: 100% !important;
 }
 .circle .circleText {
     text-align: center;
