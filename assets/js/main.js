@@ -349,12 +349,12 @@
 
     // Show animated elements
     animateElements();
-    jQuery(window).scroll(animateElements);
-  });
-  // animated progressbar
+      jQuery(window).scroll(animateElements);
+    });
 
-  window.addEventListener('load', () => {
-    aos_init();
-  });
+
+    window.addEventListener('load', () => {
+      aos_init();
+    });
 
 })();

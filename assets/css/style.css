@@ -545,36 +545,59 @@ section.about {
   justify-content: center;
   flex-direction: column;
   top: 0;
-  right: 15px;
+  right: 0;
 }
-.about .content.content-right-aligned {
-  text-align: right;
-  align-items: flex-end;
-  padding-right: 10%;
-  z-index: 1;
+@media (min-width: 1025px) {
+  .about .content .slide-content {
+    position: absolute;
+    height: 100%;
+    justify-content: center;
+    transition: all 0.7s;
+  }
+  .content.content-left-aligned .slide-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 10%;
+    z-index: 1;
+    left: -1500px;
+  }
+  .content.content-right-aligned .slide-content {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    padding-right: 10%;
+    z-index: 1;
+    right: -1500px;
+  }
+  .content-active .content-left-aligned .slide-content {
+    left: 0;
+  }
+  .content-active .content-right-aligned .slide-content {
+    right: 0;
+  }
+  .content.content-right-aligned .slide-content::after,
+  .content.content-left-aligned .slide-content::after {
+    content: '';
+    position: absolute;
+    height: 55%;
+    width: 1250px;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .content.content-right-aligned .slide-content::after {
+    background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0.02%, rgba(46, 46, 46, 0.8) 40.96%);
+    right: -400px;
+  }
+  .content.content-left-aligned .slide-content::after {
+    background: linear-gradient(270deg, #212121 -1.2%, rgba(22, 22, 22, 0) -1.19%, rgba(46, 46, 46, 0.87) 24.47%);
+    left: -400px;
+  }
 }
-.about .content.content-left-aligned {
-  text-align: left;
-  align-items: flex-start;
-  padding-left: 10%;
-  z-index: 1;
-}
-.about .content.content-right-aligned::after,
-.about .content.content-left-aligned::after {
-  content: '';
-  position: absolute;
-  height: 270px;
-  width: 1250px;
-  z-index: -1;
-}
-.about .content.content-right-aligned::after {
-  background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0.02%, rgba(46, 46, 46, 0.8) 40.96%);
-  right: -400px;
-}
-.about .content.content-left-aligned::after {
-  background: linear-gradient(270deg, #212121 -1.2%, rgba(22, 22, 22, 0) -1.19%, rgba(46, 46, 46, 0.87) 24.47%);
-  left: -400px;
-}
+
 .about .content h3 {
   font-size: 18px;
   line-height: 22px;
@@ -596,7 +619,7 @@ section.about {
   margin: 0 0 24px;
   color: #C6C6C6;
   letter-spacing: 0.04em;
-  width: 50%;
+  width: 450px;
 }
 .about .content .btn-read-more {
   line-height: 0;

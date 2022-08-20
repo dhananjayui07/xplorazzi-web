@@ -312,6 +312,12 @@
         position: static;
         background: linear-gradient(180.46deg, rgba(22, 22, 22, 0) 0.4%, rgba(46, 46, 46, 0.8) 42.52%);
     }
+    .about .content .slide-content {
+        text-align: center;
+    }
+    .about .slide-content .btn-site-theme {
+        margin: 0 auto;
+    }
     .about .content.content-left-aligned {
         padding: 60px 24px;
         align-items: center;
@@ -331,6 +337,7 @@
         text-align: center;
         margin-bottom: 32px;
         width: 300px;
+        margin: 0 auto;
     }
     .about .content h3 {
         font-size: 14px;

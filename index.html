@@ -176,46 +176,51 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <!-- RIGHT -->
-      <div class="container about-wrapper" data-aos="fade-up">
-        <div class="about-image-bg" data-aos="zoom-out" data-aos-delay="200">
-          <!-- <img src="assets/img/rack-one.png" class="img-fluid" alt=""> -->
-          <video autoplay muted class="img-fluid">
+      <div class="container about-wrapper" id="firstVideoContent">
+        <div class="about-image-bg">
+          <video id="firstVideo" autoplay muted class="img-fluid">
             <source src="./assets/img/1st.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="content content-right-aligned" data-aos="fade-up" data-aos-delay="200">
-          <h3>EASIER, BETTER</h3>
-          <h2>Computer Vision Enabled Self Checkout</h2>
-          <p>If you are a retailer, give your consumers self checkout kiosk so that they go queue less checkout with nohesitation in buying private items. This increases salesfor retailer and reduces staff cost at checkout counter.</p>
-          <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+        <div class="content content-right-aligned" onmouseover="videoMouseOver('firstVideo','firstVideoContent')" onmouseout="videoMouseOut('firstVideo','firstVideoContent')">
+          <div class="slide-content">
+            <h3>EASIER, BETTER</h3>
+            <h2>Computer Vision Enabled Self Checkout</h2>
+            <p>If you are a retailer, give your consumers self checkout kiosk so that they go queue less checkout with nohesitation in buying private items. This increases salesfor retailer and reduces staff cost at checkout counter.</p>
+            <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+          </div>
         </div>
       </div>
       <!-- LEFT -->
-      <div class="container about-wrapper" data-aos="fade-up">
-        <div class="about-image-bg" data-aos="zoom-out" data-aos-delay="200">
-          <video autoplay muted class="img-fluid">
+      <div class="container about-wrapper" id="secondVideoContent">
+        <div class="about-image-bg">
+          <video id="secondVideo" autoplay muted class="img-fluid">
             <source src="./assets/img/2nd.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="content content-left-aligned" data-aos="fade-up" data-aos-delay="200">
-          <h3>REAL-TIME ACTIONABLE INSIGHTS</h3>
-          <h2>Shelf Management using Image Recognition</h2>
-          <p>Manage your shelf on a click of a picture. Ground staffs gets realtime shelf health report on their mobile application( Xplorazzi Image capturing App) along with actionable insights(Share-Of-Shelf, Out-Of-Stock, Empty shelf, POG compliance score, Competitors presence) so that every SKU perform better on the shelf.</p>
-          <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+        <div class="content content-left-aligned" onmouseover="videoMouseOver('secondVideo','secondVideoContent')" onmouseout="videoMouseOut('secondVideo','secondVideoContent')">
+          <div class="slide-content">
+            <h3>REAL-TIME ACTIONABLE INSIGHTS</h3>
+            <h2>Shelf Management using Image Recognition</h2>
+            <p>Manage your shelf on a click of a picture. Ground staffs gets realtime shelf health report on their mobile application( Xplorazzi Image capturing App) along with actionable insights(Share-Of-Shelf, Out-Of-Stock, Empty shelf, POG compliance score, Competitors presence) so that every SKU perform better on the shelf.</p>
+            <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+          </div>
         </div>
       </div>
       <!-- RIGHT -->
-      <div class="container about-wrapper" data-aos="fade-up">
-        <div class="about-image-bg" data-aos="zoom-out" data-aos-delay="200">
-          <video autoplay muted class="img-fluid">
+      <div class="container about-wrapper" id="thirdVideoContent">
+        <div class="about-image-bg">
+          <video id="thirdVideo" autoplay muted class="img-fluid">
             <source src="./assets/img/3rd.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="content content-right-aligned" data-aos="fade-up" data-aos-delay="200">
-          <h3>FASTER INFERENCING WITH WEB APP</h3>
-          <h2>SKU Discovery on shelf for your consumers</h2>
-          <p>Help your consumers find products hassle free. Recommend/Show the list of items and consumer can search by just scanning the shelf using their mobile camera. This helps consumer in faster shopping and brands sell their products instead loosing customers in case if customers are not able to locate the products in the store.</p>
-          <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+        <div class="content content-right-aligned" onmouseover="videoMouseOver('thirdVideo','thirdVideoContent')" onmouseout="videoMouseOut('thirdVideo','thirdVideoContent')">
+          <div class="slide-content">
+            <h3>FASTER INFERENCING WITH WEB APP</h3>
+            <h2>SKU Discovery on shelf for your consumers</h2>
+            <p>Help your consumers find products hassle free. Recommend/Show the list of items and consumer can search by just scanning the shelf using their mobile camera. This helps consumer in faster shopping and brands sell their products instead loosing customers in case if customers are not able to locate the products in the store.</p>
+            <a href="automated-checkout.html" class="btn-site-theme">Show me more</a>
+          </div>
         </div>
       </div>
     </section>
@@ -340,15 +345,12 @@
                     </div>
                   </div>
                 </div><!-- End testimonial item -->
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Blog Posts Section ======= -->
@@ -406,22 +408,15 @@
 
                   <button type="submit" class="btn-site-theme">Send Message</button>
                 </div>
-
               </div>
             </form>
-
           </div>
-
         </div>
-
       </div>
-
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div id="footerSection"></div>
   <footer id="footer" class="footer">
     <div class="footer-top">
       <div class="container">
@@ -512,8 +507,26 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
-  
+  <script>
+    function videoMouseOver(id,divId){
+        let ele = document.getElementById(id);
+        // console.log(div)
+        ele.pause();
+        let div = document.getElementById(divId);
+        div.classList.add('content-active');
+    }
+    function videoMouseOut(id,divId){
+        let ele = document.getElementById(id);
+        // alert(ele)
+        ele.play();
+        let div = document.getElementById(divId);
+        div.classList.remove('content-active');
+    }
 
+    window.addEventListener('load', () => {
+      aos_init();
+    });
+  </script>
 </body>
 
 </html>
